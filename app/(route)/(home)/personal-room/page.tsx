@@ -65,7 +65,7 @@ const PersonalRoom = () => {
             .toUpperCase()}${user?.username?.substring(1)}'s Meeting Room`}
         />
         <Table title="Meeting ID" description={meetingId!} />
-        <Table title="Invite Link" description={meetingLink} />
+        <Table title="Invite Link" description={`https://${meetingLink}`} />
       </div>
       <div className="flex gap-5">
         <Button className="bg-blue-1" onClick={startRoom}>
